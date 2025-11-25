@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hôtel OURIDA | Activités à Venir</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(to bottom, #f9f3e9, #e8dfd0);
+            color: #665d1e;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .logo-container {
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        .logo-container:hover {
+            transform: scale(1.05);
+        }
+        
+        .logo {
+            max-width: 200px;
+            margin-bottom: 2rem;
+        }
+        
+        .container {
+            max-width: 800px;
+            padding: 3rem 2rem;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            color: #2e8b57;
+        }
+        
+        p {
+            font-size: 1.3rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            color: #555;
+        }
+        
+        .coming-soon-badge {
+            display: inline-block;
+            background: #2e8b57;
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 30px;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            letter-spacing: 1px;
+        }
+        
+        .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #25D366;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+        }
+        
+        .contact-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .social-links {
+            margin-top: 3rem;
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+        
+        .social-links a {
+            color: #2e8b57;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+            background: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .social-links a:hover {
+            transform: translateY(-5px);
+            background: #2e8b57;
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            p {
+                font-size: 1.1rem;
+            }
+            
+            .container {
+                padding: 2rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container" onclick="window.location.href='index.html'">
+        <img src="/pic/logo.png" alt="Hotel OURIDA" class="logo">
+    </div>
+    
+    <div class="container">
+        <div class="coming-soon-badge">BIENTÔT DISPONIBLE</div>
+        <h1>Activités Excitantes à Venir</h1>
+        <p>Nous préparons des expériences inoubliables pour votre séjour à l'Hôtel OURIDA. Des aventures désertiques, des expériences culturelles et bien plus encore arrivent très prochainement.</p>
+        
+        <a href="https://wa.me/+212660375222" class="contact-btn" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            Contactez-nous pour en savoir plus
+        </a>
+        
+        <div class="social-links">
+            <a href="https://www.facebook.com/share/17MneeYLUT/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/hotelourida?igsh=MTBpN3cyMDkzOXRhYg==" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/+212660375222" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+
+    <script>
+        // Add click functionality to the logo container
+        document.querySelector('.logo-container').addEventListener('click', function() {
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>
